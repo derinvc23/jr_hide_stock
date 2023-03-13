@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
+        <record id="group_stoch_hide_price" model="res.groups">
+            <field name="name">Restricción de stock</field>
+            <field name="type">ir.actions.server</field> 
+        </record>
         <record id="view_product_1_inherit_form" model="ir.ui.view">
                 <field name="name">view.sale.inherit.form1</field>
                 <field name="model">product.template</field>

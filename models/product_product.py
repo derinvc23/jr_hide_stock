@@ -25,7 +25,7 @@ class Stock(models.Model):
     def _get_bol(self):
         for line in self:
 
-            if line.user_has_groups("sales_team.group_sale_salesman"):
+            if line.user_has_groups("jr_hide_stock.group_stoch_hide_price"):
                 line.bol_user=True
             else:
                 line.bol_user=False
@@ -42,7 +42,7 @@ class Stock(models.Model):
     def _get_bol(self):
         for line in self:
 
-            if line.user_has_groups("sales_team.group_sale_salesman"):
+            if line.user_has_groups("jr_hide_stock.group_stoch_hide_price"):
                 line.bol_user=True
             else:
                 line.bol_user=False
